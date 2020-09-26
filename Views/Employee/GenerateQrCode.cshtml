@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@if (ViewBag.QrCodeImg != null)
+{
+
+    <div style="text-align:center;">
+        <img src="@ViewBag.QrCodeImg" width="380" height="320" />
+
+    </div>
+    <form asp-action="ScanQrCode" asp-controller="Employee" method="post">
+        <div style="text-align:center;">
+            <input type="submit" value="Scan QrCode" class="btn btn-primary" />
+        </div>
+    </form>
+        }
+        else { <div style="text-align:center;">
+            <form asp-action="GenerateQrCode" asp-controller="Employee" method="post">
+
+
+                <input type="submit" value="Generate QrCode" class="btn btn-primary" />
+
+            </form>
+        </div>
+        
+        }
+
+

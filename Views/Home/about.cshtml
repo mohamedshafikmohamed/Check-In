@@ -1,0 +1,137 @@
+﻿<style>
+   .about-section {
+        background: url(../pics/digital-marketing-services-kbworks-1.png) no-repeat left;
+        background-size: 55%;
+        background-color: #fdfdfd;
+        overflow: hidden;
+        padding: 100px 0;
+    }
+    .about_links{
+        margin-left: 2em;
+    }
+
+    .inner-container-right {
+        width: 50%;
+        float: right;
+        background-color: #fdfdfd;
+
+
+    }
+    .inner-container-left {
+        width: 50%;
+        float: left;
+        background-color: #fdfdfd;
+
+
+    }
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .inner-container h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+
+    }
+
+    .text {
+        font-size: 13px;
+        color: #545454;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    #inputs:hover {
+        border: 3px solid #00a5a0;
+    }
+    .skills {
+        display: inline;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 13px;
+    }
+   .logo {
+       float: left;
+       margin: 0 auto;
+       display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 100px;
+
+   }
+   .p-center {
+    padding-right: 100px;
+   }
+   .about_links:hover {
+            text-decoration: none;
+            color: #2ebac8;
+        }
+        .about_text{
+            color: #0366d6;
+        }
+            .about_text:hover {
+                color: #2ebac8;
+                font-weight: 600;
+            }
+media screen and (max-width:1235px) {
+    .logo {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+    padding: 0px;
+
+
+   }
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+   .p-center {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none;
+        padding: 0px;
+   }
+   .inner-container-right {
+
+        text-align: center;
+        background-color: #fdfdfd;
+
+        width: 100%;
+
+    }
+    .inner-container-left {
+
+        text-align: center;
+        background-color: #fdfdfd;
+
+
+
+    }
+}
+</style>
+<div class="about-section container ">
+    <div class="">
+        <img class="logo inner-container-lef" width=" 300" height="300" src="~/pics/about_img.jpg" />
+        <div class="p-center inner-container-right">
+            <h1 class="about_text" style="font-weight: 600;">
+                About Us
+            </h1>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+            </p>
+            <div class="skills">
+                <span><a class="about_links" asp-action="Index" asp-controller="Home">  Digital Marketing   </a></span>
+                <span><a class="about_links" asp-action="Index" asp-controller="Home">  Mobile Apps  </a></span>
+                <span>  <a class="about_links" asp-action="Index" asp-controller="Home"> &nbsp;  Web Development&nbsp; &nbsp; </a></span>
+                <span><a class="about_links" asp-action="Index" asp-controller="Home"> Graphic  Design &nbsp; &nbsp;</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>

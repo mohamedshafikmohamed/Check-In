@@ -1,0 +1,104 @@
+﻿@model Check_In.Models.Employee
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    .form-control {
+        border-radius: 15px;
+        height:45px;
+    }
+
+        .form-control:hover {
+            border: 3px solid #00a5a0;
+        }
+
+    .btn-primary {
+        background-color: #00a5a0;
+    }
+
+        .btn-primary:hover {
+            background-color: #00a5a8;
+        }
+
+    .control-label {
+        font-weight: 600;
+    }
+</style>
+<h1>Create</h1>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gender" class="control-label"></label>
+                <select asp-for="@Model.gender" class=" selectpicke form-control" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                <span asp-validation-for="gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+         
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Salary" class="control-label"></label>
+                <input asp-for="Salary" class="form-control" />
+                <span asp-validation-for="Salary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Position" class="control-label"></label>
+                <input asp-for="Position" class="form-control" />
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Army_Certificate" class="control-label"></label>
+                <input type="file" asp-for="Army_Certificate" class="form-control" />
+                <span asp-validation-for="Army_Certificate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Criminal_Case_Newspaper" class="control-label"></label>
+                <input type="file" asp-for="Criminal_Case_Newspaper" class="form-control" />
+                <span asp-validation-for="Criminal_Case_Newspaper" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University_Certificate" class="control-label"></label>
+                <input type="file" asp-for="University_Certificate" class="form-control" />
+                <span asp-validation-for="University_Certificate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="birth_Certificate" class="control-label"></label>
+                <input  type="file" asp-for="birth_Certificate" class="form-control" />
+                <span asp-validation-for="birth_Certificate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
